@@ -33,6 +33,20 @@ body {
   background-color: #0B1D26;
   width: 100%;
 }
+body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(330.24deg, rgba(255, 255, 255, 0) 50%, #0B1D26 150%), linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #0B1D26 95%), url("../img/bckgrnd.jpg") no-repeat;
+  background-size: cover;
+  height: 1575px;
+  width: 100%;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+  position: absolute;
+  z-index: -1;
+}
 body.lock {
   overflow: hidden;
 }
@@ -68,32 +82,87 @@ body.lock {
 .header {
   margin-bottom: 200px;
 }
+.header a:hover {
+  color: #FBD784;
+  transition: all 0.3s ease-out 0s;
+}
 
 .index-nav a {
-  padding-left: 40px;
+  margin-left: 40px;
 }
 .index-nav a:nth-child(1) {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 /*-- /HEADER --*/
 /*-- ASIDE-LEFT --*/
+.aside-left {
+  display: inline-block;
+  position: fixed;
+  top: 360px;
+  left: 80px;
+}
+
 .social-link {
   flex-direction: column;
 }
+.social-link p {
+  transform-origin: 50% -120%;
+  transform: rotate(90deg);
+}
 .social-link a {
-  padding-top: 24px;
+  margin-top: 24px;
+  max-width: 20px;
 }
 
 /*-- ASIDE-LEFT --*/
 /*-- ASIDE-RIGHT --*/
-.progress-wrapper {
+.aside-right {
+  display: inline-block;
+  position: fixed;
+  top: 360px;
+  right: 80px;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 32px;
+}
+.progress-list p {
+  margin-top: 40px;
+}
+
+.progress {
+  width: 3px;
+  height: 240px;
   background-color: #FFFFFF;
   opacity: 0.5;
 }
 
 /*-- /ASIDE-RIGHT --*/
 /*-- TITLE --*/
+.subtitle {
+  color: #FBD784;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  margin: 6px 0;
+  margin-right: 32px;
+  width: 72px;
+  height: 2px;
+  background-color: #FBD784;
+}
+
+.main-title {
+  width: 950px;
+  margin: 0 auto 800px;
+}
 .main-title h1 {
   font-family: "Old Standard TT", "Times New Roman", serif;
   font-size: 88px;
@@ -102,3 +171,101 @@ body.lock {
 }
 
 /*-- TITLE --*/
+/*-- HIKING-ITEMS --*/
+.hiking-item {
+  padding-left: 150px;
+  margin-bottom: 200px;
+}
+
+.hiking-text {
+  margin: 140px 110px 0 0;
+  position: relative;
+}
+.hiking-text h2 {
+  font-family: "Old Standard TT", "Times New Roman", serif;
+  font-size: 60px;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+.hiking-text p {
+  margin-bottom: 27px;
+}
+.hiking-text a {
+  display: inline-block;
+  color: #FBD784;
+  position: relative;
+}
+.hiking-text a::after {
+  content: "";
+  background-image: url("../img/arrow-right.png");
+  display: block;
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  left: 96px;
+  top: 3px;
+}
+
+.hiking-img {
+  flex: 0 0 560px;
+}
+.hiking-img img {
+  min-height: 700px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*-- /HIKING-ITEMS --*/
+/*-- FIRST-ITEM --*/
+.hiking-text1::before {
+  content: "01";
+  font-family: "Ubuntu Mono", Consolas, monospace;
+  font-weight: 700;
+  font-size: 240px;
+  position: absolute;
+  top: -125px;
+  left: -155px;
+  color: #FFFFFF;
+  opacity: 0.1;
+}
+
+/*-- /FIRST-ITEM --*/
+/*-- SECOND-ITEM --*/
+.hiking-item.second-item {
+  flex-direction: row-reverse;
+  padding-left: 0;
+}
+.hiking-item.second-item .hiking-text {
+  margin: 140px 0 0 260px;
+}
+
+.hiking-text2::before {
+  content: "02";
+  font-family: "Ubuntu Mono", Consolas, monospace;
+  font-weight: 700;
+  font-size: 240px;
+  position: absolute;
+  top: -125px;
+  left: -155px;
+  color: #FFFFFF;
+  opacity: 0.1;
+}
+
+/*-- /SECOND-ITEM --*/
+/*-- THIRD-ITEM --*/
+.hiking-text3::before {
+  content: "03";
+  font-family: "Ubuntu Mono", Consolas, monospace;
+  font-weight: 700;
+  font-size: 240px;
+  position: absolute;
+  top: -125px;
+  left: -155px;
+  color: #FFFFFF;
+  opacity: 0.1;
+}
+
+/*-- /THIRD-ITEM --*/
