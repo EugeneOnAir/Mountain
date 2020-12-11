@@ -1,0 +1,92 @@
+$back-color: #0B1D26;
+$sup-color:  #FBD784;
+
+$main-text: 'Old Standard TT', 'Times New Roman', serif;
+$sup-text: 'Ubuntu Mono', Consolas, monospace;
+
+
+*{box-sizing: inherit;
+	box-sizing: border-box;}
+img{max-width: 100%;
+    height: auto;}  
+a{text-decoration: none;
+	color: inherit;}
+p,span,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+a:focus, button:focus {outline: $sup-color auto 2px;}
+body{
+  margin: 0;
+  padding: 68px 80px 0;
+
+  font-family: $sup-text;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: $back-color;
+  width: 100%;
+	&.lock{overflow: hidden;}
+}
+
+.container {
+	max-width: 1460px;
+	margin: 0 auto;
+  @media (max-width: 1200px){max-width: 970px;}
+  @media (max-width: 992px){max-width: calc(100% - 40px); padding: 0 20px;}
+  @media (max-width: 479px){max-width: calc(100% - 20px); padding: 0 10px;}
+}
+.container-fluid {
+
+	}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.link {}
+
+/*-- HEADER --*/
+.header {
+	margin-bottom: 200px;
+}
+.index-nav {
+	a{
+		padding-left: 40px;
+		&:nth-child(1){
+			padding-left: 0;
+		}
+	}
+}
+
+/*-- /HEADER --*/
+
+/*-- ASIDE-LEFT --*/
+.aside-left {}
+.social-link {
+	flex-direction: column;
+	a{
+		padding-top: 24px;
+	}
+}
+/*-- ASIDE-LEFT --*/
+
+/*-- ASIDE-RIGHT --*/
+.aside-right {}
+.progress-bar {}
+.progress-wrapper {
+	background-color: #FFFFFF;
+	opacity: 0.5;
+}
+.progress {}
+/*-- /ASIDE-RIGHT --*/
+
+/*-- TITLE --*/
+.main-title {
+	h1{
+		font-family: $main-text;
+  	font-size: 88px;
+  	line-height: normal;
+  	font-weight: 700;
+	}
+}
+
+/*-- TITLE --*/
