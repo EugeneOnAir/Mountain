@@ -16,7 +16,9 @@ a:focus, button:focus {outline: $sup-color auto 2px;}
 body{
   margin: 0;
   padding: 0;
-  padding-top: 68px;
+  padding-top: 60px;
+  @media (max-width: 1200px){padding:10px; padding-bottom: 0; font-size: 16px;
+  line-height: 24px;}
 
   font-family: $sup-text;
   font-size: 18px;
@@ -31,7 +33,7 @@ body{
   	display: block;
   	background: linear-gradient(330.24deg, rgba(255, 255, 255, 0) 50%, #0B1D26 150%), linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #0B1D26 95%), url("../img/bckgrnd.jpg") no-repeat;
   	background-size: cover;
-  	height: 1575px;
+  	height: 1450px;
   	width: 100%;
   	padding: 0;
   	top: 0;
@@ -39,6 +41,7 @@ body{
   	background-position: 0 0;
   	position: absolute;
   	z-index: -1;
+  	@media (max-width: 1200px){height: 900px;}
 	}
 	&.lock{overflow: hidden;}
 }
@@ -46,13 +49,12 @@ body{
 .container {
 	margin: 0 auto;
 	max-width: 1460px;
- 	@media (max-width: 1200px){max-width: 970px;}
+ 	@media (max-width: 1200px){max-width: 900px;}
    @media (max-width: 992px){max-width: calc(100% - 40px); padding: 0 20px;}
    @media (max-width: 479px){max-width: calc(100% - 20px); padding: 0 10px;}
 }
 .container-fluid {
 	margin: 0 auto;
-	position: rel
 	max-width: 1760px;
 }
 
@@ -64,6 +66,7 @@ body{
 /*-- HEADER --*/
 	.header {
 		margin-bottom: 200px;
+ 		@media (max-width: 1200px){margin-bottom: 120px;}
 		img{
 			max-height: 50px;
 		}
@@ -101,9 +104,10 @@ body{
 
 /*-- ASIDE-LEFT --*/
 	.aside-left {
-		display: inline-block;
+		display: block;
 		position: fixed;
 		top: 360px;
+		padding-left: 10px;
 		z-index: 11;
 	}
 	.social-link {
@@ -116,19 +120,24 @@ body{
 
 /*-- ASIDE-RIGHT --*/
 	.aside-right {
-		display: inline-block;
+		display: block;
 		position: fixed;
 		top: 360px;
-		right: 0;
+
 		z-index: 11;
+
+		@media (max-width: 1200px){display: none;}
 	}
-	.progress-bar {
+	.progress-fixed{
+		width: 90px;
+		margin-left: auto;
 	}
 	.progress-list {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		margin-right: 32px;
+
 		p{
 			line-height: 22px;
 			margin-top: 40px;
@@ -165,12 +174,15 @@ body{
 	}
 	.main-title {
 		width: 950px;
-		margin: 0 auto 800px;
+		margin: 0 auto 645px;
+		@media (max-width: 1200px){width: 500px; margin-bottom: 235px;}
 		h1{
 			font-family: $main-text;
-	  	font-size: 88px;
-	  	line-height: normal;
-	  	font-weight: 700;
+	  		font-size: 88px;
+	  		line-height: normal;
+	  		font-weight: 700;
+	  		text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	  		@media (max-width: 1200px){font-size: 64px;}
 		}
 	}
 
@@ -184,16 +196,20 @@ body{
 	.hiking-item {
 		padding-left: 150px;
 		margin-bottom: 200px;
+		@media (max-width: 1200px){margin-bottom: 120px;}	
 	}
 	.hiking-text {
 		margin: 140px 110px 0 0;
 		position: relative;
+		@media (max-width: 1200px){margin: 80px 80px 0 0;}	
 		h2{
 			font-family: $main-text;
-	  	font-size: 60px;
-	  	line-height: normal;
-	  	font-weight: 700;
-	  	margin-bottom: 27px;
+		  	font-size: 60px;
+		  	line-height: normal;
+		  	font-weight: 700;
+		  	margin-bottom: 27px;
+
+			@media (max-width: 1200px){font-size: 36px;}	
 		}
 		p{
 			margin-bottom: 27px;
@@ -221,13 +237,17 @@ body{
 		}
 	}
 	.hiking-img {
-		flex: 0 0 560px;	
+		flex: 0 0 560px;
+ 		@media (max-width: 1200px){flex: 0 0 320px;}	
+
 		img{
-			min-height: 700px;
+			height: 700px;
 			object-fit: cover;
-	  	position: relative;  
-	  	top: 0;
-	  	left: 0;
+	  		position: relative;  
+	  		top: 0;
+	  		left: 0;
+
+	  		@media (max-width: 1200px){height: 400px;}	
 	  }
 	}
 
@@ -240,10 +260,11 @@ body{
 		font-weight: 700;
 		font-size: 240px;
 		position: absolute;
-	  top: -15px;
-	  left: -155px;
+	   top: -15px;
+	   left: -155px;
 		color: #FFFFFF;
 		opacity: 0.1;
+		@media (max-width: 1200px){font-size: 180px; left: -125px;}
 	}
 /*-- /FIRST-ITEM --*/
 
@@ -253,6 +274,7 @@ body{
 		padding-left: 0;
 		.hiking-text {
 			margin: 140px 0 0 260px;
+			@media (max-width: 1200px){margin: 80px 0 0 190px;}	
 		}
 	}
 	.hiking-text2::before{
@@ -261,10 +283,11 @@ body{
 		font-weight: 700;
 		font-size: 240px;
 		position: absolute;
-	  top: -15px;
-	  left: -155px;
+	   top: -15px;
+	   left: -155px;
 		color: #FFFFFF;
 		opacity: 0.1;
+		@media (max-width: 1200px){font-size: 180px; left: -125px;}
 	}
 /*-- /SECOND-ITEM --*/
 
@@ -275,16 +298,18 @@ body{
 		font-weight: 700;
 		font-size: 240px;
 		position: absolute;
-	  top: -15px;
-	  left: -155px;
+		top: -15px;
+		left: -155px;
 		color: #FFFFFF;
 		opacity: 0.1;
+		@media (max-width: 1200px){font-size: 180px; left: -125px;}
 	}
 /*-- /THIRD-ITEM --*/
 
 /*-- FOOTER --*/
 	.footer {
 		margin-bottom: 120px;
+		@media (max-width: 1200px){margin-bottom: 60px;}	
 		a:hover{
 			color: $sup-color;
 			transition: all 0.3s ease-out 0s;
