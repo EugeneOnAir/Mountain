@@ -52,8 +52,8 @@ body.lock {
 }
 
 .container {
-  max-width: 1460px;
   margin: 0 auto;
+  max-width: 1460px;
 }
 @media (max-width: 1200px) {
   .container {
@@ -73,6 +73,12 @@ body.lock {
   }
 }
 
+.container-fluid {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1760px;
+}
+
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
@@ -88,6 +94,7 @@ body.lock {
 .header a:hover {
   color: #FBD784;
   transition: all 0.2s ease-out 0s;
+  text-decoration: underline;
 }
 
 .header-wrapper {
@@ -112,7 +119,7 @@ body.lock {
   height: 24px;
   position: absolute;
   left: -32px;
-  top: -3px;
+  top: 3px;
 }
 
 /*-- /HEADER --*/
@@ -121,7 +128,6 @@ body.lock {
   display: inline-block;
   position: fixed;
   top: 360px;
-  left: 80px;
   z-index: 11;
 }
 
@@ -147,7 +153,7 @@ body.lock {
   display: inline-block;
   position: fixed;
   top: 360px;
-  right: 80px;
+  right: 0;
   z-index: 11;
 }
 
@@ -231,6 +237,11 @@ body.lock {
   color: #FBD784;
   position: relative;
 }
+.hiking-text a:hover {
+  transition: all 0.2s ease-out 0s;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
 .hiking-text a::after {
   content: "";
   background-image: url("../img/arrow-right.png");
@@ -239,7 +250,7 @@ body.lock {
   height: 16px;
   position: absolute;
   left: 96px;
-  top: 3px;
+  top: 9px;
 }
 
 .hiking-img {
@@ -304,6 +315,7 @@ body.lock {
 }
 
 /*-- /THIRD-ITEM --*/
+/*-- FOOTER --*/
 .footer {
   margin-bottom: 120px;
 }
@@ -357,3 +369,5 @@ body.lock {
   color: #FBD784;
   margin-bottom: 24px;
 }
+
+/*-- /FOOTER --*/
