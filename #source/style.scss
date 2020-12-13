@@ -17,8 +17,8 @@ body{
   margin: 0;
   padding: 0;
   padding-top: 60px;
-  @media (max-width: 1200px){padding:10px; padding-bottom: 0; font-size: 16px;
-  line-height: 24px;}
+  @media (max-width: 1800px){padding-top: 30px; font-size: 16px; line-height: 24px;}
+  @media (max-width: 1200px){padding:10px; padding-bottom: 0; font-size: 16px; line-height: 24px;}
 
   font-family: $sup-text;
   font-size: 18px;
@@ -41,7 +41,10 @@ body{
   	background-position: 0 0;
   	position: absolute;
   	z-index: -1;
+  	@media (max-width: 1800px){height: 1200px;}
+  	@media (max-width: 1400px){height: 1000px;}
   	@media (max-width: 1200px){height: 900px;}
+  	@media (max-width: 992px){height: 750px;}
 	}
 	&.lock{overflow: hidden;}
 }
@@ -49,13 +52,17 @@ body{
 .container {
 	margin: 0 auto;
 	max-width: 1460px;
+	@media (max-width: 1800px){max-width: 1100px;}
+	@media (max-width: 1400px){max-width: 960px;}
  	@media (max-width: 1200px){max-width: 900px;}
-   @media (max-width: 992px){max-width: calc(100% - 40px); padding: 0 20px;}
-   @media (max-width: 479px){max-width: calc(100% - 20px); padding: 0 10px;}
+   @media (max-width: 992px){max-width: calc(100% - 50px); padding: 0 25px;}
+   @media (max-width: 479px){max-width: calc(100% - 40px);}
 }
 .container-fluid {
 	margin: 0 auto;
 	max-width: 1760px;
+	@media (max-width: 1800px){max-width: 1350px;}
+	@media (max-width: 1400px){max-width: 1170px;}
 }
 
 .flex-wrapper {
@@ -66,6 +73,7 @@ body{
 /*-- HEADER --*/
 	.header {
 		margin-bottom: 200px;
+ 		@media (max-width: 1400px){margin-bottom: 160px;}
  		@media (max-width: 1200px){margin-bottom: 120px;}
 		img{
 			max-height: 50px;
@@ -80,8 +88,10 @@ body{
 		align-items: center;
 	}
 	.index-nav {
+		@media (max-width: 767px){max-width: 80px;}
 		a{
 			margin-left: 40px;
+			@media (max-width: 767px){margin-left: 0;}
 			&:nth-child(1){
 				margin-left: 0;
 			}
@@ -89,6 +99,7 @@ body{
 	}
 	.account{
 		position: relative;
+		margin-left: 36px;
 		&::before{
 			content: '';
 			background-image: url('../img/account.png');
@@ -98,6 +109,7 @@ body{
 			position: absolute;
 			left: -32px;
 			top: 3px;	
+			@media (max-width: 1800px){top:0;}
 		}
 	}
 /*-- /HEADER --*/
@@ -109,6 +121,7 @@ body{
 		top: 360px;
 		padding-left: 10px;
 		z-index: 11;
+		@media (max-width: 767px){display: none;}
 	}
 	.social-link {
 		flex-direction: column;
@@ -123,7 +136,6 @@ body{
 		display: block;
 		position: fixed;
 		top: 360px;
-
 		z-index: 11;
 
 		@media (max-width: 1200px){display: none;}
@@ -175,7 +187,11 @@ body{
 	.main-title {
 		width: 950px;
 		margin: 0 auto 645px;
+		@media (max-width: 1800px){margin-bottom: 470px;}
+		@media (max-width: 1400px){margin-bottom: 370px;}
 		@media (max-width: 1200px){width: 500px; margin-bottom: 235px;}
+		@media (max-width: 992px){margin-bottom: 205px;}
+		@media (max-width: 767px){max-width: 500px; width: auto; padding: 0 30px;margin-bottom: 155px;}
 		h1{
 			font-family: $main-text;
 	  		font-size: 88px;
@@ -196,12 +212,18 @@ body{
 	.hiking-item {
 		padding-left: 150px;
 		margin-bottom: 200px;
-		@media (max-width: 1200px){margin-bottom: 120px;}	
+		@media (max-width: 1800px){margin-bottom: 150px;}	
+		@media (max-width: 1400px){margin-bottom: 120px;}			
+		@media (max-width: 1200px){margin-bottom: 100px;}	
+		@media (max-width: 992px){padding-left: 0;}
+		@media (max-width: 767px){flex-wrap: wrap;}
 	}
 	.hiking-text {
 		margin: 140px 110px 0 0;
 		position: relative;
-		@media (max-width: 1200px){margin: 80px 80px 0 0;}	
+		@media (max-width: 1400px){margin: 80px 80px 0 0;}	
+		@media (max-width: 992px){margin: 60px 40px 0 0;}	
+		@media (max-width: 767px){margin-right: 0; margin-bottom: 40px;}
 		h2{
 			font-family: $main-text;
 		  	font-size: 60px;
@@ -209,6 +231,7 @@ body{
 		  	font-weight: 700;
 		  	margin-bottom: 27px;
 
+		  	@media (max-width: 1400px){font-size: 42px;}
 			@media (max-width: 1200px){font-size: 36px;}	
 		}
 		p{
@@ -238,7 +261,10 @@ body{
 	}
 	.hiking-img {
 		flex: 0 0 560px;
+ 		@media (max-width: 1800px){flex: 0 0 420px;}	
+ 		@media (max-width: 1400px){flex: 0 0 400px;}	
  		@media (max-width: 1200px){flex: 0 0 320px;}	
+ 		@media (max-width: 767px){margin: 0 auto; flex-shrink: 1;}
 
 		img{
 			height: 700px;
@@ -247,7 +273,10 @@ body{
 	  		top: 0;
 	  		left: 0;
 
+	  		@media (max-width: 1800px){height: 550px;}
+	  		@media (max-width: 1400px){height: 500px;}		
 	  		@media (max-width: 1200px){height: 400px;}	
+	  		@media (max-width: 374px){height: 320px;}
 	  }
 	}
 
@@ -265,6 +294,7 @@ body{
 		color: #FFFFFF;
 		opacity: 0.1;
 		@media (max-width: 1200px){font-size: 180px; left: -125px;}
+		@media (max-width: 1200px){left: 0; top: -30px;}
 	}
 /*-- /FIRST-ITEM --*/
 
@@ -272,9 +302,13 @@ body{
 	.hiking-item.second-item{
 		flex-direction: row-reverse;
 		padding-left: 0;
+		@media (max-width: 767px){flex-direction: row;}	
 		.hiking-text {
 			margin: 140px 0 0 260px;
-			@media (max-width: 1200px){margin: 80px 0 0 190px;}	
+			@media (max-width: 1400px){margin: 80px 0 0 225px;}
+			@media (max-width: 1200px){margin: 80px 0 0 190px;}
+			@media (max-width: 992px){margin: 60px  0 0 40px;}
+			@media (max-width: 767px){margin-left: 0; margin-bottom: 40px;}			
 		}
 	}
 	.hiking-text2::before{
@@ -288,6 +322,7 @@ body{
 		color: #FFFFFF;
 		opacity: 0.1;
 		@media (max-width: 1200px){font-size: 180px; left: -125px;}
+		@media (max-width: 1200px){left: 0; top: -30px;}
 	}
 /*-- /SECOND-ITEM --*/
 
@@ -303,20 +338,28 @@ body{
 		color: #FFFFFF;
 		opacity: 0.1;
 		@media (max-width: 1200px){font-size: 180px; left: -125px;}
+		@media (max-width: 1200px){left: 0; top: -30px;}
 	}
 /*-- /THIRD-ITEM --*/
 
 /*-- FOOTER --*/
 	.footer {
 		margin-bottom: 120px;
+		@media (max-width: 1800px){margin-bottom: 80px;}
+		@media (max-width: 1400px){margin-bottom: 60px;}	
 		@media (max-width: 1200px){margin-bottom: 60px;}	
 		a:hover{
 			color: $sup-color;
 			transition: all 0.3s ease-out 0s;
 		}
 	}
+	.footer-wrapper{
+		flex-wrap: wrap;
+	}
 	.privacy {
 		max-width: 340px;
+		margin: 0 20px 20px 0;
+		@media (max-width: 992px){max-width: 280px;}	
 		img{
 			width: 50px;
 		}
@@ -327,6 +370,7 @@ body{
 		max-width: 195px;
 		display: flex;
 		flex-direction: column;
+		margin: 0 20px 20px 0;
 		h2{font-size: 24px; color: $sup-color; margin-bottom: 24px;}
 	}
 
@@ -340,6 +384,7 @@ body{
 		max-width: 170px;
 		display: flex;
 		flex-direction: column;
+		margin: 0 20px 20px 0;
 		h2{font-size: 24px; color: $sup-color; margin-bottom: 24px;}
 
 	}
