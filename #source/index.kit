@@ -1,155 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="img/#.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Prata&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Prata&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ИМЯ СТРАНИЦЫ</title>
-</head>
+  <head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="img/#.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Prata&family=Ubuntu+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Будьте готовы к горам и не только!</title>
+  </head>
 
-<body>
-  <!-- HEADER -->
-  <header class="header">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="flex-wrapper header-wrapper">
+          <a href="#"><img src="img/logo.png" alt="Logo" /></a>
+          <nav class="index-nav">
+            <a href="#">Оборудование</a>
+            <a href="#">Про нас</a>
+            <a href="#">Наш блог</a>
+          </nav>
+          <a href="#" class="account">Аккаунт</a>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
     <div class="container-fluid">
-      <div class="flex-wrapper header-wrapper">
-        <a href="#"><img src="img/logo.png" alt="Logo"></a>
-        <nav class="index-nav">
-          <a href="#">Equipment</a>
-          <a href="#">About us</a>
-          <a href="#">Blog</a>
-        </nav>
-        <a href="#" class="account">Account</a>
-      </div>
-    </div>
-  </header>
-  <!-- /HEADER -->
-
-  <div class="container-fluid">
-    <!-- ASIDE-LEFT -->
-    <aside class="aside-left">
-      <div class="flex-wrapper social-link">
-        <p>Follow us</p>
-        <a href="#">
-          <img src="img/IG.png">
-        </a>
-        <a href="#">
-          <img src="img/TW.png">
-        </a>
-      </div>
-    </aside>
-    <!-- /ASIDE-LEFT -->
-
-    <!-- ASIDE-RIGHT -->
-    <div class="progress-fixed">
-      <aside class="aside-right">
-        <div class="flex-wrapper progress-bar">
-          <div class="progress-list">
-            <p>Start</p>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-          </div>
-          <div class="progress-wrapper">
-            <div class="progress-line"></div>
-          </div>
-        </div> 
+      <!-- ASIDE-LEFT -->
+      <aside class="aside-left">
+        <div class="flex-wrapper social-link">
+          <p>Follow us</p>
+          <a href="#">
+            <img src="img/IG.png" />
+          </a>
+          <a href="#">
+            <img src="img/TW.png" />
+          </a>
+        </div>
       </aside>
-    </div>
-    <!-- /ASIDE-RIGHT -->
-  </div>
+      <!-- /ASIDE-LEFT -->
 
-  <!-- TITLE -->
-  <section class="main-title">
-    <span class="subtitle">A hiking guide</span>
-    <h1>Будьте готовы к горам и не только!</h1>
-  </section>
-  <!-- /TITLE -->
-  
-  <!-- HIKING-ITEMS -->
-  <section class="hiking-items">
-    <div class="container">
-
-      <!-- FIRST-ITEM -->
-      <div class="flex-wrapper hiking-item first-item">
-        <div class="hiking-text hiking-text1">
-          <span class="subtitle">Get Started</span>
-          <h2>Какой ты уровень туриста?</h2>
-          <p>Определение вашего уровня туриста может быть важным инструментом при планировании будущих походов. Это руководство по пешеходным уровням поможет вам спланировать походы в соответствии с различными рейтингами походов, установленными различными веб-сайтами, такими как All Trails и Modern Hiker. Какой вы тип путешественника - новичок, умеренный, продвинутый умеренный, эксперт или опытный турист?</p>
-           <a href="#">Read more</a>
+      <!-- ASIDE-RIGHT -->
+      <div class="progress-fixed">
+        <aside class="aside-right">
+          <div class="flex-wrapper progress-bar">
+            <div class="progress-list">
+              <p>Start</p>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="progress-wrapper">
+              <div class="progress-line"></div>
+            </div>
           </div>
-        <div class="hiking-img">
-            <img src="img/item-1.png" alt="">
-        </div>
+        </aside>
       </div>
-      <!-- /FIRST-ITEM -->
-
-      <!-- SECOND-ITEM -->
-      <div class="flex-wrapper hiking-item second-item">
-        <div class="hiking-text hiking-text2">
-          <span class="subtitle">Hiking Essentials</span>
-          <h2>Правильный выбор походного снаряжения!</h2>
-          <p>Самое приятное в начале похода в том, что вам действительно не нужно какое-либо специальное снаряжение, вы, вероятно, сможете обойтись тем, что у вас уже есть. Начнем с одежды. Типичная ошибка новичков в походах - это носить джинсы и обычную одежду, которая станет тяжелой и натереться, если они вспотеют или промокнут.</p>
-          <a href="#">Read more</a>
-        </div>
-        <div class="hiking-img">
-          <img src="img/bckgrnd.jpg" alt="">
-        </div>
-      </div>  
-      <!-- /SECOND-ITEM -->
-
-      <!-- THIRD-ITEM -->
-      <div class="flex-wrapper hiking-item third-item">
-        <div class="hiking-text hiking-text3">
-          <span class="subtitle">Where you go is the key</span>
-          <h2>Понять свою карту и время</h2>
-          <p>Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в сумку с застежкой-молнией. Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать. Мне нравится знать, какой будет моя следующая достопримечательность, когда я иду пешком. Например, я прочитаю руководство и знаю, что, скажем, через милю я поверну направо на перекрестке.</p>
-          <a href="#">Read more</a>
-        </div>
-        <div class="hiking-img">
-          <img src="img/item-1.png" alt="">
-        </div>
-      </div>
-      <!-- /THIRD-ITEM -->
-
-    </div>  
-  </section>
-  <!-- /HIKING-ITEMS -->
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="flex-wrapper container footer-wrapper">
-      <div class="privacy">
-        <a href="$"><img src="img/logo.png" alt="Логотип"></a>
-        <p>Отправляйтесь туда и откройте для себя следующий склон, гору и место назначения!</p>
-        <a class="copy-text" href="#">Copyright 2020, Inc. Terms & Privacy</a>
-      </div>
-      <div class="contacts">
-        <h2>Наши контакты</h2>
-        <nav class="footer-nav">
-          <a href="">Напишите нам</a>
-          <a href="tel:#">7 (999) 656-65-65</a>
-          <a href="mailto:#">loremipsum@dolor.ru</a>
-        </nav>
-      </div>
-      <div class="other-info">
-        <h2>Дополнительно</h2>
-        <nav class="footer-nav">
-          <a href="">Блог</a>
-          <a href="">Наши вакансии</a>
-          <a href="">Наша команда</a>
-          <a href="">Фотогалерея</a>
-        </nav>
-      </div>
+      <!-- /ASIDE-RIGHT -->
     </div>
-  </footer>
-  <!-- /FOOTER -->
 
-  <script src="js/script.js"></script>
-</body>
+    <!-- TITLE -->
+    <section class="main-title">
+      <span class="subtitle">A hiking guide</span>
+      <h1>Будьте готовы к горам и не только!</h1>
+    </section>
+    <!-- /TITLE -->
 
+    <!-- HIKING-ITEMS -->
+    <section class="hiking-items">
+      <div class="container">
+        <!-- FIRST-ITEM -->
+        <div class="flex-wrapper hiking-item first-item">
+          <div class="hiking-text hiking-text1">
+            <span class="subtitle">Get Started</span>
+            <h2>Насколько ты прокачанный турист?</h2>
+            <p>
+              Определение вашего уровня туриста может быть важным инструментом
+              при планировании будущих походов. Это руководство по пешеходному
+              уровню поможет вам спланировать походы в соответствии с различными
+              рейтингами походов, установленными различными веб-сайтами, такими
+              как All Trails и Modern Hiker. Какой у вас типаж путешественника -
+              новичок, умеренный, продвинутый умеренный, эксперт или опытный
+              турист?
+            </p>
+            <a href="#">Посмотреть больше</a>
+          </div>
+          <div class="hiking-img">
+            <img src="img/item-1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- /FIRST-ITEM -->
+
+        <!-- SECOND-ITEM -->
+        <div class="flex-wrapper hiking-item second-item">
+          <div class="hiking-text hiking-text2">
+            <span class="subtitle">Hiking Essentials</span>
+            <h2>Правильный выбор походного снаряжения!</h2>
+            <p>
+              Самое приятное в начале похода в том, что вам действительно не
+              нужно какое-либо специальное снаряжение, вы, вероятно, сможете
+              обойтись тем, что у вас уже есть. Начнем с одежды. Типичная ошибка
+              новичков в походах - это носить джинсы и обычную одежду, которая
+              станет тяжелой и натереться, если они вспотеют или промокнут.
+            </p>
+            <a href="#">Посмотреть больше</a>
+          </div>
+          <div class="hiking-img">
+            <img src="img/item-2.jpg" alt="" />
+          </div>
+        </div>
+        <!-- /SECOND-ITEM -->
+
+        <!-- THIRD-ITEM -->
+        <div class="flex-wrapper hiking-item third-item">
+          <div class="hiking-text hiking-text3">
+            <span class="subtitle">Where you go is the key</span>
+            <h2>Составьте свой собственный план</h2>
+            <p>
+              Для начала распечатайте путеводитель и карту. Если идет дождь,
+              бросьте их в сумку с застежкой-молнией. Прочтите руководство,
+              изучите карту и получите хорошее представление о том, чего
+              ожидать. Мне нравится знать, какой будет моя следующая
+              достопримечательность, когда я иду пешком. Например, я прочитаю
+              руководство и знаю, что, скажем, через километр я поверну направо
+              на перекрестке.
+            </p>
+            <a href="#">Посмотреть больше</a>
+          </div>
+          <div class="hiking-img">
+            <img src="img//item-1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- /THIRD-ITEM -->
+      </div>
+    </section>
+    <!-- /HIKING-ITEMS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="flex-wrapper container footer-wrapper">
+        <div class="privacy">
+          <a href="$"><img src="img/logo.png" alt="Логотип" /></a>
+          <p>
+            Отправляйтесь туда и откройте для себя следующий склон, гору и место
+            назначения!
+          </p>
+          <a class="copy-text" href="#">Copyright 2020, Inc. Terms & Privacy</a>
+        </div>
+        <div class="contacts">
+          <h2>Наши контакты</h2>
+          <nav class="footer-nav">
+            <a href="">Напишите нам</a>
+            <a href="tel:#">7 (999) 656-65-65</a>
+            <a href="mailto:#">loremipsum@dolor.ru</a>
+          </nav>
+        </div>
+        <div class="other-info">
+          <h2>Дополнительно</h2>
+          <nav class="footer-nav">
+            <a href="">Блог</a>
+            <a href="">Наши вакансии</a>
+            <a href="">Наша команда</a>
+            <a href="">Фотогалерея</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
